@@ -1,0 +1,125 @@
+.education-section {
+  background: var(--bg-primary);
+}
+
+.education-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.education-main-line {
+  position: absolute;
+  top: 3rem;
+  bottom: 0;
+  left: 2rem;
+  width: 2px;
+  background: var(--border-color);
+  z-index: 1;
+}
+
+.education-item {
+  display: flex;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.education-number-container {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 2rem;
+  position: relative;
+}
+
+.education-number {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  z-index: 3;
+}
+
+.education-connector {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  width: 2rem;
+  height: 2px;
+  background: var(--border-color);
+  z-index: 2;
+}
+
+.education-content {
+  flex-grow: 1;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  transition: transform var(--transition-normal);
+}
+
+.education-content:hover {
+  transform: translateX(5px);
+  border-color: var(--border-hover);
+}
+
+.education-degree {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.education-institution {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  margin-bottom: 0.5rem;
+}
+
+.education-period {
+  font-size: 0.95rem;
+  color: var(--text-tertiary);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.education-description {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .education-main-line {
+    left: 1.5rem;
+  }
+  
+  .education-number {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+  
+  .education-connector {
+    top: 1.5rem;
+    left: 3rem;
+    width: 1.5rem;
+  }
+  
+  .education-number-container {
+    margin-right: 1.5rem;
+  }
+  
+  .education-content {
+    padding: 1.5rem;
+  }
+}
