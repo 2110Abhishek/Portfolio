@@ -80,3 +80,9 @@
   border-color: rgba(59, 130, 246, 0.3);
   color: var(--accent-primary);
 }
+
+@media (max-width: 576px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}

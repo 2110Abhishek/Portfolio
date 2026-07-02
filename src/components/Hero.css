@@ -201,3 +201,19 @@
     height: 400px;
   }
 }
+
+@media (max-width: 576px) {
+  .hero-image-container {
+    width: 260px;
+    height: 260px;
+  }
+  
+  .hero-visual {
+    height: 300px;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
